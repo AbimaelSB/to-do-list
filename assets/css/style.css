@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 100%;
+  margin: auto 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.afazeres{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.afazeres input{
+  margin: 10px 5px;
+  font-size: 1.75rem;
+  flex: 0 1 0;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+#add{
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px aqua solid;
+  border-radius: 5px;
+  color: blue;
+}
+
+#to-do{
+  display: flex;
+  flex-direction: column;
+}
+
+#to-do p{
+  margin: 3px 5px;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.task{
+  word-wrap: break-word;
+}
+
+#hl{
+  margin: 20px 0;
+  width: 450px;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .afazeres{
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .afazeres input{
+    margin: 5px 5px;
+  }
+
+  #hl{
+    width: 300px;
+  }
+}
