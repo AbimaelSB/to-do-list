@@ -28,8 +28,13 @@ body{
   flex: 0 1 0;
 }
 
-input:invalid {
+input[type="text"]:invalid {
   background-color: red;
+}
+
+#tarefa{
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #add{
@@ -47,8 +52,8 @@ input:invalid {
 
 #to-do p{
   margin: 3px 5px;
-  font-size: 1.5rem;
-  text-align: justify;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .task{
